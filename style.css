@@ -14,10 +14,12 @@ h1 {
     font: 116.2px/97px 'Kanit', sans-serif;
     letter-spacing: 1px;
     color: #CC1D36;
+    margin-bottom: 20px;
 }
 
 h2 {
     font: 42px/43px 'Kanit', sans-serif;
+    margin-bottom: 20px;
 }
 
 h3 {
@@ -28,6 +30,7 @@ h3 {
 h4 {
     font: 25px/26px 'Kanit', sans-serif;
     color: white;
+    margin-bottom: 15px;
 }
 
 a {
@@ -35,10 +38,10 @@ a {
     color: white;
 }
 
-input[type=submit], .contact a {
+/* input[type=submit], .contact a {
     font: 20px/21px 'Kanit', sans-serif;
     color: white;
-}
+} */
 
 img {
     width: 100%;
@@ -72,15 +75,15 @@ header {
     color: white;
 }
 
-nav {
+header nav {
     float: right;
 }
 
-nav a {
+header nav a {
     margin-right: 40px;
 }
 
-nav a:last-child {
+header nav a:last-child {
     margin-right: 0;
 }
 
@@ -124,6 +127,7 @@ button {
     text-align: center;
     padding: 10px 20px;
     margin-top: 30px;
+    border: none;
 }
 
 .new-models {
@@ -156,17 +160,77 @@ button {
     padding: 80px 150px;
 }
 
+.links-wrapper {
+    width: 100%;
+    padding: 20px 50px;
+}
+
 .link {
     text-align: center;
     margin: 0 auto;
+    float: left;
+    width: calc(100% / 3);
+}
+
+.links i {
+    color: #CC1D36;
+    margin-bottom: 25px;
 }
 
 .contact {
     background-color: #6C0918;
+    color: white;
+    min-height: 350px;
+    width: 100%;
+}
+
+.contact-wrapper {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.contact-panel {
+    width: calc(100% / 2);
+    float: left;
+}
+
+form {
+    margin-top: 10px;
+}
+
+.contact input {
+    padding: 10px 25px;
+    border: 1px solid transparent;
+    float: left;
+}
+
+.contact input[type=text] {
+    width: 60%;
+}
+
+.contact input[type=submit] {
+    background-color: black;
+    font: 20px/25px 'Kanit', sans-serif;
+    color: white;
+    /* border-color: black; */
+}
+
+.contact nav {
+    float: right;
+    text-align: right;
+}
+
+.contact nav a {
+    font: 20px/21px 'Kanit', sans-serif;
+    display: block;
+    line-height: 1.5;
 }
 
 footer {
     background-color: #0B0101;
     font: 18px/29px 'Roboto', sans-serif;
     color: white;
+    text-align: center;
 }
